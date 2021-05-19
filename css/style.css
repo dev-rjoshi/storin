@@ -227,7 +227,7 @@ ul ul{position: absolute; box-shadow: 0px 0px 15px 1px #b6b9b9; border-radius: 5
 .packing-bag-section .packing-bag .headding h2:before{content: ""; position: absolute; top: -25px; left: 50%; background: #008489; width: 0px; height: 2px; transform: translateX(-50%);}
 .packing-bag-section .packing-bag .headding h2 span{color: #007bff;}
 .packing-bag-section .packing-box{text-align: center;}
-.packing-bag-section .packing-box .pak-qul-height{height: 90px; padding-top: 20px;}
+.packing-bag-section .packing-box .pak-qul-height{height: 70px; padding-top: 10px;}
 .packing-bag-section .packing-box.active{opacity: 1;}
 .packing-bag-section .packing-box h2{font-size: 18px; color: #484848; padding-bottom: 15px;}
 .packing-bag-section .packing-box p{color: #000; font-size: 14px; margin: auto; padding-top: 8px;}
