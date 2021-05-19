@@ -57,7 +57,7 @@ input{transition: all 400ms ease;}
 .header-section .header .header-logo .logo-2{display: none;}
 .header-section .header .header-logo img{height: 70px; width: 100%; max-width: 200px; transition: all 400ms ease;}
 .header-section .header .header-logo input{background: none; width: 100%; color: #424242; border: 1px solid #c3c3c3; padding: 13px 10px 13px 40px; border-radius: 5px; font-size: 17px; font-weight: 700;}
-.header-section .header .header-logo .search-hotel{position: relative; opacity: 0; padding-top:5px; visibility: hidden;}
+.header-section .header .header-logo .search-hotel{position: absolute; opacity: 0; padding-top:5px; visibility: hidden;}
 .header-section .header .header-logo .search-hotel:before{content: "\f002"; font-family: fontawesome; color: #424242; position: absolute; top: 18px; left: 25px;}
 .header-section .header .mainmenu{text-align: center;}
 .header-section .header .mainmenu ul{padding-top: 28px; transition: all 400ms ease;}
