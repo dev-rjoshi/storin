@@ -1,0 +1,9 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+snid.snitcher.com	TRUE	/	FALSE	1999999999	SNID	eyJpdiI6IkdaWUdxbXhISFRDY01JeWUwb2ZsNHc9PSIsInZhbHVlIjoiQ3B5R0R6WTA0QktjTHdBTmIrVW0rUFpYQWw0cXhyQTQvNWdwSVVNSm9UUGp0VTFtK3pLSWQ1ZW94OE8yTFN0amRPZHhUK0RTS2d2MjlOWVhST05YbmRrZlJndkZpcWMwQzMzUVFVdkhNU3FpNHBUbWVKUmdZOUNKUlF1QlJ1Nk8iLCJtYWMiOiI2ZmNiNGFjY2YxNjU5OTAyZDY2Y2Q3MTFjZWU3NzNmZTk3MWRiZDYxOGRlZGNkOTE3YzE1ZmQwNTRiNzBmNDZkIn0%3D
+snid.snitcher.com	TRUE	/	FALSE	1999999999	samesite	none
+px.ads.linkedin.com	TRUE	/	FALSE	1999999999	lang	v=2&lang=en-us
+.linkedin.com	TRUE	/	FALSE	1999999999	bcookie	v=2&6e25f55b-86ac-495e-83f5-6943d34f66d9"
+.linkedin.com	TRUE	/	FALSE	1999999999	lidc	b=OGST09:s=O:r=O:a=O:p=O:g=2276:u=1:x=1:i=1655233862:t=1655320262:v=2:sig=AQGTUWeObN72HN0pawZ9jfMf_T7eUNF3"
+px.ads.linkedin.com	TRUE	/	FALSE	1999999999	SameSite	None
+

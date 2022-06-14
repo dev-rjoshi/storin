@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Storin - Everywhere you travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- Date Picker -->
+	<link rel="stylesheet" type="text/css" href="css/style-date.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/pignose.calendar.min.css" />
+	<!-- search dropdown -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--- Component CSS -->
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="css/transition.css">
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<!-- dopr end -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- date picker end -->
+
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<!-- date picker -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/pignose.calendar.full.min.js"></script>
+	<!-- end date -->
+
+	<!--- search drop Example Libs -->
+	<script src="js/jquery.min.js"></script>
+	<!--- Component JS -->
+	<script type="text/javascript" src="js/transition.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
+	<!-- end -->
+	<!-- Progress bar -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.bootstrap.wizard.js"></script>
+	<!-- End -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+</head>
+
+<body>
+	<div class="header-section">
+		<div class="container-two">
+			<div class="header header-2 header-login">
+				<div class="row">
+					<div class="header-logo col-md-6">
+						<div class="row">
+							<a href="index.html" class="logo-1 col-md-6 col-4"><img src="images/logo-1.png"></a>
+							<a href="index.html" class="logo-2 col-md-4 col-4"><img src="images/logo-1.png"></a>
+							<div class="search-hotel col-md-8 col-8"><input type="text" name="text"
+									placeholder="Search..."></div>
+						</div>
+					</div>
+
+					<div class="mainmenu col-md-6">
+						<ul>
+							<li><a href="become-host.html">Become a host</a></li>
+							<li><a href="#">Bookings</a></li>
+							<li><a href="javascript:void(0)" class="help-show">Help</a></li>
+							<li>
+								<a href="javascript:void(0)" class="profile"><img src="images/user.jpg"></a>
+								<ul class="profile-open">
+									<li><a href="user-profile.html">Edit Profile</a></li>
+									<li><a href="account-setting.html">Account Settings</a></li>
+									<li><a href="invite-friend.html">Invite friends</a></li>
+									<li><a href="#">Refer hosts</a></li>
+									<li><a href="javascript:void(0)" class="logout">Log Out</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="help-section">
+					<div class="help">
+						<h2>Recommended help</h2>
+						<div class="help-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+						<div class="search-help">
+							<h3>Search by keyword</h3>
+							<div class="search-by">
+								<div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+								<input type="text" name="text" placeholder="Ex: reservation status">
+							</div>
+							<div class="search-text">
+								<h6>recommended articles</h6>
+								<div class="search-box">
+									<h3>how do I earn credit from referring a friend to Storin?</h3>
+									<p>Can I book on behalf of a friend or family member</p>
+									<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+								<div class="search-box">
+									<h3>How do I book a trip with travel credit from referrls?</h3>
+									<p>Can I book on behalf of a friend or family member</p>
+									<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+								<div class="search-box">
+									<h3>How do I book a trip with travel credit from referrls?</h3>
+									<p>Can I book on behalf of a friend or family member</p>
+									<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="visit"><a href="help-page.html">Visit the Help Center</a></div>
+							<div class="give"><a href="#">Give feedback</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header header-1 header-login-1">
+				<div class="row">
+					<div class="header-logo col-md-6">
+						<div class="row">
+							<a href="index.html" class="logo-1 col-md-6 col-4"><img src="images/logo-1.png"></a>
+							<a href="index.html" class="logo-2 col-md-4 col-4"><img src="images/logo-1.png"></a>
+							<div class="search-hotel col-md-8 col-8"><input type="text" name="text"
+									placeholder="Search..."></div>
+						</div>
+					</div>
+
+					<div class="mainmenu col-md-6">
+						<ul>
+							<li><a href="become-host.html">Become a host</a></li>
+							<li><a href="javascript:void(0)" class="help-show">Help</a></li>
+							<li><a href="#two" class="login fancybox">Sign up</a></li>
+							<li><a href="#one" class="login fancybox">Log in</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="help-section">
+					<div class="help">
+						<h2>Recommended help</h2>
+						<div class="help-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+						<div class="search-help">
+							<h3>Search by keyword</h3>
+							<div class="search-by">
+								<div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+								<input type="text" name="text" placeholder="Ex: reservation status">
+							</div>
+							<div class="search-text">
+								<h6>recommended articles</h6>
+								<div class="search-box">
+									<h3>how do I earn credit from referring a friend to Storin?</h3>
+									<p>Can I book on behalf of a friend or family member</p>
+									<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+								<div class="search-box">
+									<h3>How do I book a trip with travel credit from referrls?</h3>
+									<p>Can I book on behalf of a friend or family member</p>
+									<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+								<div class="search-box">
+									<h3>How do I book a trip with travel credit from referrls?</h3>
+									<p>Can I book on behalf of a friend or family member</p>
+									<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="visit"><a href="help-page.html">Visit the Help Center</a></div>
+							<div class="give"><a href="#">Give feedback</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rootwizard">
+		<div id="bar" class="progress progress-striped active">
+			<div class="progress-bar"></div>
+		</div>
+
+		<div class="provide-id-section id-add-section next-0" id="tab1">
+			<div class="container">
+				<div class="provide">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="provide-inner">
+								<h2>Let's add your ID</h2>
+								<p>A government ID helps us check that you're really you. It also helps us keep Storin
+									secure, fight fraud, and more. <a href="#"> How does this work?</a></p>
+
+								<p>After adding a photo of your ID, we'll then quickly match the picture in your ID with
+									a new photo you'll take of yourself.</p>
+
+								<h6><i class="fa fa-lock" aria-hidden="true"></i> Your ID will never be shared with a
+									host.</h6>
+
+								<!--<ul><li><a href="#tab1" class="next tab-1" data-toggle="tab">Next <i class="fa fa-angle-right" aria-hidden="true"></i></a></li></ul>-->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<img
+								src="https://a0.muscache.com/Storin/static/account_verification/choose_device-identity-cb0319ed4637417e7be0abf4b638a466.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="id-add-section next-1" id="tab2">
+			<div class="container">
+				<div class="id-add">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="headding">
+								<h2>Which type of ID would you like to add?</h2>
+								<p>After you enter your number, we'll send you a text with a link. This will allow you
+									to take your photos with our mobile app.</p>
+							</div>
+							<div class="add-country">
+								<h6>Country</h6>
+								<select>
+									<option>India(+91)</option>
+									<option>Albania(+355)</option>
+									<option>Brazil(+55)</option>
+									<option>Canada(+1)</option>
+									<option>Chile(+56)</option>
+									<option>Denmarkoption(+55)</option>
+									<option>Dominica</option>
+									<option>Estoniaoption(+355)</option>
+									<option>Honduras(+1)</option>
+									<option>Japanoption(+355)</option>
+									<option>Libya(+55)</option>
+								</select>
+								<h6>Type of ID</h6>
+								<div class="id-type">
+									<input type="radio" name="text">
+									<span>driving licence</span>
+								</div>
+								<div class="id-type">
+									<input type="radio" name="text">
+									<span>passport</span>
+								</div>
+								<div class="id-type">
+									<input type="radio" name="text">
+									<span>identity card</span>
+								</div>
+								<p>Your ID will never be shared with a host.</p>
+								<!--<ul><li><a href="#tab2" class="tab-2" data-toggle="tab">Next</a></li></ul>-->
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="img">
+								<img
+									src="https://a0.muscache.com/Storin/static/account_verification/choose_device-identity-cb0319ed4637417e7be0abf4b638a466.svg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="id-add-section next-2" id="tab3">
+			<div class="container">
+				<div class="id-add">
+					<div class="headding">
+						<h2>Does this look OK</h2>
+						<p>After you enter your number, we'll send you a text with a link. This will allow you to take
+							your photos with our mobile app.</p>
+					</div>
+					<div class="upload-id">
+						<div class="upload-front">
+							<div class="image">
+								<img src="images/id.jpg">
+							</div>
+							<a href="#">Re-upload front</a>
+						</div>
+						<div class="upload-front">
+							<div class="image">
+								<img src="images/id.jpg">
+							</div>
+							<a href="#">Re-upload back</a>
+						</div>
+					</div>
+				</div>
+				<!--<div class="add-country"><ul><li><a href="#tab3" class="tab-3" data-toggle="tab">Next</a></li></ul></div>-->
+			</div>
+		</div>
+
+		<div class="id-add-section next-3" id="tab4">
+			<div class="container">
+				<div class="id-add">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="images/it-work-2.png" class="take-pho">
+							<div class="headding">
+								<h2>take a photo of yourself</h2>
+								<p>After you enter your number, we'll send you a text with a link.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="photo">
+								<div class="img"></div>>
+							</div>
+							<div class="photo-btn"><a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a></div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="add-country"><ul><li><a href="#tab4" class="tab-4" data-toggle="tab">Next</a></li></ul></div>-->
+			</div>
+		</div>
+
+		<div class="id-add-section next-4" id="tab5">
+			<div class="container">
+				<div class="id-add">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="headding">
+								<h2>Which type of ID would you like to add?</h2>
+								<p>After you enter your number, we'll send you a text with a link. This will allow you
+									to take your photos with our mobile app.</p>
+								<p>This will allow you to take your photos with our mobile app.</p>
+							</div>
+							<div class="add-country"><a href="#" data-toggle="tab">Continue</a></div>
+						</div>
+						<div class="col-md-6">
+							<div class="img">
+								<img
+									src="https://a0.muscache.com/Storin/static/account_verification/choose_device-identity-cb0319ed4637417e7be0abf4b638a466.svg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="tabs">
+				<li><a href="#tab1" data-toggle="tab" class="next-1">Next</a></li>
+				<li><a href="#tab2" data-toggle="tab" class="next-2">Next</a></li>
+				<li><a href="#tab3" data-toggle="tab" class="next-3">Next</a></li>
+				<li><a href="#tab4" data-toggle="tab" class="next-4">Next</a></li>
+				<li><a href="#tab5" data-toggle="tab" class="next-5">Next</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="login-section popup" id="one">
+		<div class="login">
+			<div class="login-inner">
+				<div class="login-fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with
+						Facebook</a></div>
+				<div class="login-gl"><a href="#"><img src="images/google.png"> Log in with Google</a></div>
+				<div class="or">
+					<p>or</p>
+				</div>
+				<div class="email"><input type="text" name="email" placeholder="Email Address"></div>
+				<div class="pass"><input type="password" name="pass" placeholder="Password"></div>
+				<div class="row">
+					<div class="remember col-sm-6">
+						<input type="checkbox" name="checkbox" value="" class="checkbox">
+						<p>Remember me</p>
+					</div>
+					<div class="show col-sm-6">
+						<a href="#">Show password</a>
+					</div>
+				</div>
+				<div class="login-btn"><input type="submit" name="submit" value="Log in"></div>
+				<div class="forgot-pass">
+					<a href="#">Forgot password?</a>
+				</div>
+				<div class="sign-up">
+					<p>Don't have an account?<a href="signup.html">Sign up</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-section">
+		<div class="container">
+			<div class="footer">
+				<div class="row">
+					<div class="footer-box col-md-3">
+						<h6>Storin</h6>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+					</div>
+					<div class="footer-box col-md-3">
+						<h6>Legal</h6>
+						<div class="contact">
+							<ul>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-box col-md-3">
+						<h6>Hosting</h6>
+						<ul>
+							<li><a href="#">Why Host</a></li>
+							<li><a href="#">Refer Hosts</a></li>
+						</ul>
+					</div>
+					<div class="footer-box col-md-3">
+						<div class="footer-box-inner">
+							<div class="icon">
+								<ul>
+									<li><a href="#" target="_blank"><i class="fa fa-facebook"
+												aria-hidden="true"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									</li>
+									<li><a href="#" target="_blank"><i class="fa fa-instagram"
+												aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<ul>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Site map</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright-box col-md-6">
+							<ul>
+								<!--<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms</a></li>
+									<li><a href="#">Cookie Policy</a></li>-->
+							</ul>
+						</div>
+						<div class="copyright-box col-md-6">
+							<img src="images/logo-1.png">
+							<p>&copy; 2021 Storin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+	<script>
+		$('.clearable.example .ui.selection.dropdown').dropdown({
+			clearable: true
+		});
+
+
+		$('#rootwizard').bootstrapWizard({
+			onTabShow: function (tab, navigation, index) {
+				var $total = navigation.find('li').length;
+				var $current = index + 1;
+				var $percent = ($current / $total) * 100;
+				$('#rootwizard').find('.progress-bar').css({ width: $percent + '%' });
+			}
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

@@ -1,509 +1,144 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-	<title>Storin - Everywhere you travel</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-	<link
-		href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<!-- Date Picker -->
-	<link rel="stylesheet" type="text/css" href="css/style-date.css" />
-	<link rel="stylesheet" type="text/css" href="css/ui.css" />
-	<link rel="stylesheet" type="text/css" href="css/pignose.calendar.min.css" />
-	<!-- search dropdown -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<!--- Component CSS -->
-	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
-	<link rel="stylesheet" type="text/css" href="css/transition.css">
-	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="css/error.css">
-	<!-- dopr end -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- date picker end -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
 
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-	<!-- date picker -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/pignose.calendar.full.min.js"></script>
-	<!-- end date -->
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
 
-	<!--- search drop Example Libs -->
-	<script src="js/jquery.min.js"></script>
-	<!--- Component JS -->
-	<script type="text/javascript" src="js/transition.js"></script>
-	<script type="text/javascript" src="js/dropdown.js"></script>
-	<!-- end -->
-	<script type="text/javascript" src="js/script.js"></script>
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
 
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
 
 </head>
 
-<body>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
+
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="www.storin.in/index.html">
+						www.storin.in/index.html
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=www.storin.in/index.html">
 
 
-	<div class="search-travel search-travel-bg">
-		<div class="header-section">
-			<div class="container-two">
-				<div class="header header-1 header-bg">
-					<div class="row">
-						<div class="header-logo col-md-6">
-							<div class="row">
-								<a href="index.html" class="logo-1 col-md-6 col-4"><img src="images/logo-1.png"></a>
-								<a href="index.html" class="logo-2 col-md-4 col-4"><img src="images/logo-1.png"></a>
-								<div class="search-hotel col-md-8 col-8"><input type="text" name="text"
-										placeholder="Search..."></div>
-							</div>
-						</div>
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
 
-						<div class="mainmenu col-md-6">
-							<ul>
-								<!-- <li><a href="become-host.html" style="padding-left: 500px;">Become a host</a></li> -->
-								<li><a href="become-host.html" style="text-align: left;">Become a Host</a>
-								<li><a href="javascript:void(0)" class="help-show" style="text-align: left;">Help</a>
-									<!-- <li><a href="javascript:void(0)" class="help-show">Help</a></li> -->
-									<!-- <li><a href="#two" class="login fancybox">Sign up</a></li>
-								<li><a href="#one" class="login fancybox" style="width: auto;">Log in</a></li> -->
-							</ul>
-						</div>
-					</div>
-					<div class="help-section">
-						<div class="help">
-							<h2>Recommended help</h2>
-							<div class="help-close"><i class="fa fa-times" aria-hidden="true"></i></div>
-							<div class="search-help">
-								<h3>Search by keyword</h3>
-								<div class="search-by">
-									<div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
-									<input type="text" name="text" placeholder="Ex: reservation status">
-								</div>
-								<div class="search-text">
-									<h6>Recommended articles</h6>
-									<div class="search-box">
-										<h3>How do I earn credit from referring a friend to Storin?</h3>
-										<p>Can I book on behalf of a friend or family member</p>
-										<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</div>
-									<div class="search-box">
-										<h3>How do I book a trip with travel credit from referrls?</h3>
-										<p>Can I book on behalf of a friend or family member</p>
-										<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</div>
-									<div class="search-box">
-										<h3>How do I book a trip with travel credit from referrls?</h3>
-										<p>Can I book on behalf of a friend or family member</p>
-										<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-								<div class="visit"><a href="help-page.html">Visit the Help Center</a></div>
-								<div class="give"><a href="#">Give feedback</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
-				<div class="header header-2 header-bg">
-					<div class="row">
-						<div class="header-logo col-md-6">
-							<div class="row">
-								<a href="index.html" class="logo-1 col-md-6 col-4"><img src="images/logo-1.png"></a>
-								<a href="index.html" class="logo-2 col-md-4 col-4"><img src="images/logo-1.png"></a>
-								<div class="search-hotel col-md-8 col-8"><input type="text" name="text"
-										placeholder="Search..."></div>
-							</div>
-						</div>
-
-						<div class="mainmenu col-md-6">
-							<ul>
-								<li><a href="become-host.html">Become a host</a></li>
-								<li><a href="#">Bookings</a></li>
-								<li><a href="javascript:void(0)" class="help-show">Help</a></li>
-								<li>
-									<a href="javascript:void(0)" class="profile"><img src="images/user.jpg"></a>
-									<ul class="profile-open">
-										<li><a href="user-profile.html">Edit Profile</a></li>
-										<li><a href="account-setting.html">Account Settings</a></li>
-										<li><a href="invite-friend.html">Invite friends</a></li>
-										<li><a href="#">Refer hosts</a></li>
-										<li><a href="javascript:void(0)" class="logout">Log Out</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="help-section">
-						<div class="help">
-							<h2>Recommended help</h2>
-							<div class="help-close"><i class="fa fa-times" aria-hidden="true"></i></div>
-							<div class="search-help">
-								<h3>Search by keyword</h3>
-								<div class="search-by">
-									<div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
-									<input type="text" name="text" placeholder="Ex: reservation status">
-								</div>
-								<div class="search-text">
-									<h6>recommended articles</h6>
-									<div class="search-box">
-										<h3>how do I earn credit from referring a friend to Storin?</h3>
-										<p>Can I book on behalf of a friend or family member</p>
-										<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</div>
-									<div class="search-box">
-										<h3>How do I book a trip with travel credit from referrls?</h3>
-										<p>Can I book on behalf of a friend or family member</p>
-										<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</div>
-									<div class="search-box">
-										<h3>How do I book a trip with travel credit from referrls?</h3>
-										<p>Can I book on behalf of a friend or family member</p>
-										<a href="#">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-									</div>
-								</div>
-								<div class="visit"><a href="help-page.html">Visit the Help Center</a></div>
-								<div class="give"><a href="#">Give feedback</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header header-3">
-					<div class="row">
-						<div class="header-logo col-md-6">
-							<div class="row">
-								<a href="index.html" class="logo-1 col-md-6 col-4"><img src="images/logo-1.png"></a>
-								<a href="index.html" class="logo-2 col-md-4 col-4"><img src="images/logo-1.png"></a>
-								<div class="search-hotel col-md-8 col-8"><input type="text" name="text"
-										placeholder="Search..."></div>
-							</div>
-						</div>
-
-						<div class="mainmenu col-md-6">
-							<ul>
-								<li><a href="#">Add listing</a></li>
-								<li><a href="#">Bookings</a></li>
-								<li><a href="#">Help</a></li>
-								<li>
-									<a href="#" class="profile"><img src="images/user.jpg"></a>
-									<ul class="profile-open">
-										<li><a href="#">Edit Profile</a></li>
-										<li><a href="#">Account Settings</a></li>
-										<li><a href="#">Transaction history</a></li>
-										<li><a href="#">Add listing</a></li>
-										<li><a href="#">Refer hosts</a></li>
-										<li><a href="javascript:void(0)" class="logout">Log Out</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="search-travel-2">
-				<!-- <div class="abcd"><img src="images/image.png"></div> -->
-				<div class="search">
-					<div class="search-heading">
-						<h2>Plan your next stop</h2>
-					</div>
-					<div class="search-box">
-						<div class="row search-inner">
-							<div class="col-md-12">
-								<div class="clearable example">
-									<div class="ui fluid search selection dropdown">
-										<input type="hidden" name="country" value="">
-										<input class="search" placeholder="Where?" autocomplete="off" tabindex="0">
-										<div class="text default" style="padding-bottom: 20px;"></div>
-										<i class="dropdown icon"></i>
-										<div class="menu transition hidden" tabindex="-1">
-											<div class="item active selected" data-value="af"><i
-													class="fa fa-map-marker" aria-hidden="true"></i>Afghanistan</div>
-											<div class="item" data-value="ax"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Aland Islands</div>
-											<div class="item" data-value="al"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Albania</div>
-											<div class="item" data-value="dz"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Algeria</div>
-											<div class="item" data-value="as"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>American Samoa</div>
-											<div class="item" data-value="ad"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Andorra</div>
-											<div class="item" data-value="ao"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Angola</div>
-											<div class="item" data-value="ai">VAnguilla</div>
-											<div class="item" data-value="ag"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Antigua</div>
-											<div class="item" data-value="ar"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Argentina</div>
-											<div class="item" data-value="am"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Armenia</div>
-											<div class="item" data-value="aw"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Aruba</div>
-											<div class="item" data-value="au"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Australia</div>
-											<div class="item" data-value="bs"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Bahamas</div>
-											<div class="item" data-value="bh"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Bahrain</div>
-											<div class="item" data-value="bd"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Bangladesh</div>
-											<div class="item" data-value="bb"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Barbados</div>
-											<div class="item" data-value="by"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Belarus</div>
-											<div class="item" data-value="mm"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Burma</div>
-											<div class="item" data-value="bi"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Burundi</div>
-											<div class="item" data-value="tc"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Caicos Islands</div>
-											<div class="item" data-value="kh"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Cambodia</div>
-											<div class="item" data-value="cm"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Cameroon</div>
-											<div class="item" data-value="ca"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Canada</div>
-											<div class="item" data-value="cv"><i class="fa fa-map-marker"
-													aria-hidden="true"></i>Cape Verde</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<button type="submit" class="submit"><img src="images/search.png"></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="login-section popup" id="one">
-		<div class="login">
-			<div class="login-inner">
-				<div class="login-fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Log in with
-						Facebook</a></div>
-				<div class="login-gl"><a href="#"><img src="images/google.png"> Log in with Google</a></div>
-				<div class="or">
-					<p>or</p>
-				</div>
-				<div class="email"><input type="text" name="email" placeholder="Email Address"></div>
-				<div class="pass"><input type="password" name="pass" placeholder="Password"></div>
-				<div class="row">
-					<div class="remember col-sm-6">
-						<input type="checkbox" name="checkbox" value="" class="checkbox">
-						<p>Remember me</p>
-					</div>
-					<div class="show col-sm-6">
-						<a href="#">Show password</a>
-					</div>
-				</div>
-				<div class="login-btn"><input type="submit" name="submit" value="Log in"></div>
-				<div class="forgot-pass">
-					<a href="#">Forgot password?</a>
-				</div>
-				<div class="sign-up">
-					<p>Don't have an account?<a href="signup.html">Sign up</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="sign-up-section login-section" id="two">
-		<div class="login">
-			<div class="login-inner">
-				<div class="login-fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Sign Up with
-						Facebook</a></div>
-				<div class="login-gl"><a href="#"><img src="images/google.png"> Sign Up with Google</a></div>
-				<div class="or">
-					<p>or</p>
-				</div>
-				<div class="login-btn"><input type="submit" name="submit" value="Sign Up with Email"></div>
-				<div class="sign-up">
-					<p>Already have an Storin account?<a href="login.html">Log in</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="packing-bag-section">
-		<div class="container">
-			<div class="packing-bag">
-				<div class="headding">
-					<h2>How Storin works?</h2>
-				</div>
-				<div class="">
-					<div class="row">
-						<div class="packing-box col-md-4">
-							<img src="images/globe.png" style="object-fit:contain;
-							width:300px;
-							height:285px;">
-							<div class="pak-qul-height">
-								<h2>Discover Luggage Spaces</h2>
-								<p>Find luggage space in your favourite hotels, restaurants, salons and shops</p>
-							</div>
-						</div>
-						<div class="packing-box col-md-4">
-							<img src="images/luggage.png" style="object-fit:contain;
-							width:300px;
-							height:280px;">
-							<div class="pak-qul-height">
-								<h2>Book Space</h2>
-								<p>Book and pay online - all through Storin's trusted services</p>
-							</div>
-						</div>
-						<div class="packing-box col-md-4">
-							<img src="images/safe.png" style="object-fit:contain;
-							width:280px;
-							height:280px;">
-							<div class="pak-qul-height">
-								<h2>Enjoy</h2>
-								<p>Safely store your luggage and enjoy your stay</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="great-value-section">
-		<div class="container">
-			<div class="great-value">
-				<div class="heading">
-					<h2>How much?</h2>
-					<!-- <h2><span>Great value.</span></h2> -->
-					<p>Flexibility is key when you travel. Pay once, just <i class="fa fa-inr"
-							aria-hidden="true"></i>100 per item, and 24 hours of storage is yours, to use as much or as
-						little as you need.</p>
-					<p>Add an extra 24 hours for just <i class="fa fa-inr" aria-hidden="true"></i>80 per item.</p>
-				</div>
-				<div class="content">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="images-1">
-								<div class="img-round"></div>
-								<div class="price">
-									<h3>24 hours</h3>
-									<h2>100<p>per bag</p>
-									</h2>
-									<div class="list">
-										<ul>
-											<li>GST included</li>
-											<li>Free cancellation</li>
-										</ul>
-									</div>
-									<div class="Storinpoint"><a href="#">Explore now!</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="images">
-								<div class="images-inner">
-									<div class="price">
-										<div class="price-inner">
-											<h2>80</h2>
-											<p>per bag</p>
-										</div>
-									</div>
-									<div class="text">
-										<h2>Extra day</h2>
-										<ul>
-											<li>GST included</li>
-											<li>Free cancellation</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer-section">
-		<div class="container">
-			<div class="footer">
-				<div class="row">
-					<div class="footer-box col-md-3">
-						<h6>Storin</h6>
-						<ul>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Help</a></li>
-						</ul>
-					</div>
-					<div class="footer-box col-md-3">
-						<h6>Legal</h6>
-						<div class="contact">
-							<ul>
-								<li><a href="#">Terms of Service</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Sitemap</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="footer-box col-md-3">
-						<h6>Hosting</h6>
-						<ul>
-							<li><a href="#">Why Host</a></li>
-							<li><a href="#">Refer Hosts</a></li>
-						</ul>
-					</div>
-					<div class="footer-box col-md-3">
-						<div class="footer-box-inner">
-							<div class="icon">
-								<ul>
-									<li><a href="#" target="_blank"><i class="fa fa-facebook"
-												aria-hidden="true"></i></a></li>
-									<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-									</li>
-									<li><a href="#" target="_blank"><i class="fa fa-instagram"
-												aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-							<ul>
-								<li><a href="#">Terms</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Help</a></li>
-								<li><a href="#">Privacy</a></li>
-								<li><a href="#">Site map</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="copyright">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="copyright-box col-md-6">
-							<ul>
-								<!--<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">Terms</a></li>
-									<li><a href="#">Cookie Policy</a></li>-->
-							</ul>
-						</div>
-						<div class="copyright-box col-md-6">
-							<img src="images/logo-1.png">
-							<p>&copy; 2021 Storin</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-	<script>
-		$('.clearable.example .ui.selection.dropdown').dropdown({
-			clearable: true
-		});
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
+
+
